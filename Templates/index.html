@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1><font color = "Purple">Predict Starcraft Player Level</font></h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<div><input type="text" name="Age" placeholder="Age" required="required" /></div>
+        <div><input type="text" name="HoursPerWeek" placeholder="Hours Per Week" required="required" /></div>
+		<div><input type="text" name="TotalHours" placeholder="Total Hours" required="required" /></div>
+        <div><input type="text" name="APM" placeholder="APM" required="required" /></div>
+        <div><input type="text" name="SelectByHotkeys" placeholder="Select By Hotkeys" required="required" /></div>
+        <div><input type="text" name="AssignToHotkeys" placeholder="Assign To Hotkeys" required="required" /></div>
+        <div><input type="text" name="UniqueHotkeys" placeholder="Unique Hotkeys" required="required" /></div>
+        <div><input type="text" name="MinimapAttacks" placeholder="Minimap Attacks" required="required" /></div>
+        <div><input type="text" name="MinimapRightClicks" placeholder="Minimap Right Clicks" required="required" /></div>
+        <div><input type="text" name="NumberOfPACs" placeholder="Number Of PACs" required="required" /></div>
+        <div><input type="text" name="GapBetweenPACs" placeholder="Gap Between PACs" required="required" /></div>
+        <div><input type="text" name="ActionLatency" placeholder="Action Latency" required="required" /></div>
+        <div><input type="text" name="ActionsInPAC" placeholder="Actions In PAC" required="required" /></div>
+        <div><input type="text" name="TotalMapExplored" placeholder="Total Map Explored" required="required" /></div>
+        <div><input type="text" name="WorkersMade" placeholder="Workers Made" required="required" /></div>
+        <div><input type="text" name="UniqueUnitsMade" placeholder="Unique Units Made" required="required" /></div>
+        <div><input type="text" name="ComplexUnitsMade" placeholder="Complex Units Made" required="required" /></div>
+        <div><input type="text" name="ComplexAbilitiesUsed" placeholder="Complex Abilities Used" required="required" /></div><br>
+        <div><button type="submit" class="btn btn-primary btn-block btn-large"><font color = "DeepPink">Predict</font></button></div>
+        
+    </form>
+
+   <br>
+   <p><font color = "RebeccaPurple">{{ prediction_text }}</p>
+   <p><font color = "MediumVioletRed">{{ prediction_2 }}</font></p>
+
+ </div>
+
+
+</body>
+</html>
