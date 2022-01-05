@@ -16,13 +16,14 @@ def predict():
     final_features = [np.array(int_features)]
     prediction1 = model1.predict(final_features)
     prediction2 = model2.predict(final_features)
-    output1 = round(prediction1[0], 2)
-    output2 = round(prediction2[0], 2)
-    league = "bronze"
+    league_index = round(prediction1[0], 2)
+    level = round(prediction2[0], 2)
+    league_dict = {1:"Bronze", 2:"Silver", 3:"Gold", 4:"Platinum", 5:"Diamond", 6:"Master", 7:"Grandmaster", 8:"Professional"}
+    league_name = league_dict[league_index]
 
     return render_template('index.html', 
-                           prediction_text= f'Prediction of the league index (40% of accuracy) : Index : {output1}, League : {league}',
-                           prediction_2 = f'Prediction of the Level of the player :  The player is level {output2}')
+                           prediction_text= f"Prediction of the player's League (around 0.40 of accuracy): Index : {league_index}, League : {league_name}",
+                           prediction_2 = f"Prediction of the player's Level  (around 0.80 of accuracy):  The player is level {level}")
 
 if __name__ == '__main__':
     model1 = pickle.load(open("model1.pickle", "rb"))
