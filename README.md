@@ -1,7 +1,7 @@
 # Skillcraft_Analysis_Yones_Salle
 
-Hello ! We are tow students at ESILV, in our 4th year of study. 
-As a final project of the Python for Data Analysis course, we are glad to present you our analysis of the dataset SkillCraft1 created by Mark Blair, Joe Thompson, Andrew Henrey and Bill Chen on September 20 of 2013.
+Hello ! We are tow students at ESILV, in our 4th year of engineering studies. 
+As a final project of the Python for Data Analysis course, we are glad to present you our analysis of the dataset SkillCraft1 created by Mark Blair, Joe Thompson, Andrew Henrey and Bill Chen on September 20 of 2013. <br>
 SkillCraft1 is a game dataset with 20 attributes and 3395 instances of players from the game StarCraft 2.<br>
 StarCraft II  is a science fiction real-time strategy video game developed and published by Blizzard Entertainment. It is a multiplayer game where several players compete in an arena to collect resources, capture strategic points and destroy opposing bases.
 In the game, players have a League, which is a ranking system based on the performances and the number of victories in competitions. 
