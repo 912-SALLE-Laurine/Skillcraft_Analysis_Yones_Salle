@@ -6,7 +6,7 @@ As a final project of the Python for Data Analysis course, we are glad to presen
 SkillCraft1 is a game dataset with 20 attributes and 3395 instances of players from the game StarCraft 2.<br>
 StarCraft II  is a science fiction real-time strategy video game developed and published by Blizzard Entertainment. It is a multiplayer game where several players compete in an arena to collect resources, capture strategic points and destroy opposing bases. <br><br>
 ![Starcraft2-logo](https://user-images.githubusercontent.com/72121488/148271079-631c3206-dd57-4247-b81a-08fc5dd24efb.jpg) <br>
-In the game, players have a League, which is a ranking system based on the performances and the number of victories in competitions. 
+In the game, players have a League, which is a ranking system based on the performances and the number of victories in competitions. <br>
 There are 8 Leagues : 
 
 League Index | Name Rank 
@@ -45,7 +45,7 @@ We performed 2 types of predictions with our dataset:
 - Then, we grouped the LeagueIndex to create 3 levels (beginner, intermediate, advanced), so instead of having 8 outputs, there is only 3 output to predict. With the best model, Gradient Boosting Classifier, the accuracy we obtained is around 0.80, so it is much better than the previous prediction :smiley:.
 
 #### API Flask : 
-We implementend the best model in our Flask application. You can fill the form with the player's parameters, and it will return a prediction of the League avec the Level of the player.
+We implementend the best model in our Flask application. You can fill the form with the player's parameters, and it will return a prediction of the League avec the Level of the player. <br>
 To run the api: download the "!!!!!!!!!!!!" folder, open your Anaconda Prompt (or any python supported cmd ) and go to the !!!!!! folder (cd .\!!!!!) then enter python app.py , and copy the localhost link (like http://127.0.0.1:8000/) in your browser.
 
 Thank you for reading :blush:
