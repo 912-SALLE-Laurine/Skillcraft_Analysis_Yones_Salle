@@ -10,7 +10,7 @@ StarCraft II  is a science fiction real-time strategy video game developed and p
 In the game, players have a League, which is a ranking system based on the performances and the number of victories in competitions. <br>
 There are 8 Leagues : 
 
-League Index | Name Rank 
+League Index | League Name
 --- | ---
 8| Professional
 7|Grandmaster
