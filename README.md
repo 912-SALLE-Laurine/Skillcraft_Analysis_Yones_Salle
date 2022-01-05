@@ -1,4 +1,4 @@
-DCX # Skillcraft Dataset Analysis 
+# Skillcraft Dataset Analysis 
 *Yones Maélis and Sallé Laurine*
 
 Hello ! We are two students at ESILV, in our 4th year of engineering studies :relaxed:. <br>
